@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought Task-1</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="logo" style="color: black;"><img src="https://deepthought.education/assets/images/logo/logo.svg"
+                alt=""></div>
+        <div class="nav-items">
+            <ul>
+                <a href="#">
+                    <li><span class="material-symbols-outlined">home</span></li>
+                </a>
+                <a href="#">
+                    <li><span class="material-symbols-outlined">construction</span></li>
+                </a>
+                <a href="#">
+                    <li><span class="material-symbols-outlined">notifications</span></li>
+                </a>
+                <a href="#">
+                    <li>
+                        <img src="profile.jpg" alt="Profile" class="profile-picture">
+                    </li>
+                </a>
+                <a href="#">
+                    <li><span class="material-symbols-outlined">more_vert</span></li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div class="first-sec">
+        <div>
+            <h1 class="title">Technical Project Management</h1>
+        </div>
+        <div><button class="submit-button">Submit Task</button></div>
+    </div>
+    <div class="sec-heading">
+        <div class="sec-items">
+            <div class="heading">
+                <h2>Explore the world of management</h2>
+            </div>
+            <div class="heading">
+                <p>As a project manager, you play a important role in leading a project through innovation,planning,
+                    execution and controlling and completion. How? do you want to manage each and every step of your
+                    life.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Journey Board -->
+        <div class="journey-board" id="journey-board">
+            <div class="board-header" onclick="toggleBoard('journey-board')">
+                <div>Journey Board</div>
+                <div><span class="material-symbols-outlined">
+                        arrow_forward
+                    </span></div>
+            </div>
+            <div class="board-content">
+                <ul>
+                    <li>Explore the world of management</li>
+                    <li>Threadbuild</li>
+                    <li>Structure your pointers</li>
+                    <li>4SA Method</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <div class="grid">
+                <div class="box">
+                    <div class="card-header">
+                        <h2>Technical Project Management</h2>
+                        <i class="info-icon" title="More information">ℹ</i>
+                    </div>
+                    <p class="description">
+                        <strong>Description:</strong> Story of Alignment Scope of Agility Specific Accountable
+                        Staggering Approach
+                    </p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/your_video_id"
+                            title="Technological Project Management" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card-header">
+                        <h2>Threadbuild</h2>
+                        <i class="info-icon" title="More information">ℹ</i>
+                    </div>
+                    <p class="description">
+                        <strong>Description:</strong> Watch the video and threadbuild, and jot out key threads while
+                        watching
+                        the video.
+                    </p>
+                    <div class="thread-section">
+                        <div class="thread-header">
+                            <span>Thread A</span>
+                        </div>
+                        <div class="inputs">
+                            <textarea placeholder="Sub thread 1"></textarea>
+                            <textarea placeholder="Sub Interpretation 1"></textarea>
+                        </div>
+                        <div class="actions">
+                            <div class="icons">
+                                <button title="Add Idea">💡</button>
+                                <button title="Comment">💬</button>
+                                <button title="Help">❓</button>
+                                <button title="Download">⬇</button>
+                            </div>
+                            <div class="selectors">
+                                <select>
+                                    <option>Select Categ</option>
+                                    <option>Category 1</option>
+                                    <option>Category 2</option>
+                                </select>
+                                <select>
+                                    <option>Select Process</option>
+                                    <option>Process 1</option>
+                                    <option>Process 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="add-thread">+ Sub-thread</button>
+                        <h6 class="sum">Summary for thread A</h6>
+                        <textarea class="summary" placeholder="enter your text here"></textarea>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="card-header">
+                        <h2>Structure Your Pointers</h2>
+                        <i class="info-icon" title="More information">ℹ</i>
+                    </div>
+                    <p class="description">
+                        <strong> Description:</strong> Write a 300 - 400 word article from your thread. Publish your
+                        understanding and showcase your understanding to the entire world.
+                    </p>
+                    <form class="article-form">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input type="text" id="title" placeholder="Enter your title here">
+                        </div>
+                        <div class="form-group">
+                            <label for="content">Content</label>
+                            <div class="content-editor">
+                                <div class="toolbar">
+                                    <button>File</button>
+                                    <button>Edit</button>
+                                    <button>View</button>
+                                    <button>Insert</button>
+                                    <button>Format</button>
+                                    <button>Tools</button>
+                                    <button>Table</button>
+                                    <button>Help</button>
+                                </div>
+                                <textarea id="content" placeholder="Write your content here"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="box">
+                    <div class="card-header">
+                        <h2>4SA Method</h2>
+                        <i class="info-icon" title="More information">ℹ</i>
+                    </div>
+                    <p class="description"><strong>Description</strong>: To Explore more read more</p>
+
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span class="thr"><i class="fa-solid fa-chevron-up"></i> Introduction</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>The 4SA Method, How to bring an idea into progress?</p>
+                                <h2>See More</h2>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <span class="thr"><i class="fa-solid fa-chevron-up"></i> Thread A</span>
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    How are you going to develop your strategy? Which method are you going to use to
+                                    develop a
+                                    strategy?What if the project is lengthy?
+                                </p>
+                                <h2>See More</h2>
+                                <div class="nested-content">
+                                    <p>Example 1</p>
+                                </div>
+                                <p style="margin-top: 10px;">You have a concept, how will you put it into progress?</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="side-nav">
+            <div class="note-text">B o a r d N o t i c e</div>
+        </nav>
+        <div class="icon-stack">
+            <div class="icon">?</div>
+            <div class="icon">
+                <div class="group-icon">
+                    <div class="person"></div>
+                    <div class="person"></div>
+                    <div class="person"></div>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="schedule-icon"></div>
+            </div>
+        </div>
+
+            <script src="script.js"></script>
+</body>
+
+</html>
