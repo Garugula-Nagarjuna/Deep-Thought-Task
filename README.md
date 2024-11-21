@@ -1,1 +1,1 @@
-# Deep-Thought-Task-1
+# Deep-Thought-Task
